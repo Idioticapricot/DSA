@@ -1,35 +1,22 @@
+
+import java.util.Scanner;
+
 public class JavaBasics{
-    public static int calculateSum(int sum1,int sum2){
-        
- 
-        int sum = sum1+sum2;
-       return sum;
-        
-
-    }
-    public static void Swap(int a, int b){
-
-        
-        int temp = a;
-        a = b;
-        b = temp;
-        
-
-    }
+   public static int product(int a,int b){
+    int product = a*b;
+    return product ;
+   }
     public static void main(String[] args) {
-        //Scanner sc = new Scanner(System.in);
-       // System.out.print("Enter A :");
-       // int a = sc.nextInt();
-       // System.out.print("Enter B :");
-        //int b = sc.nextInt();
+       System.out.println("Enter A :");
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter A :");
+       int a = sc.nextInt();
+       System.out.println("Enter b :");
+       int b = sc.nextInt();
+       int prod = product(a, b);
+       System.out.println("Product  = "+prod);
 
-       // int sum = calculateSum(a,b);
-       // System.out.println("The Sum is : "+ sum);
-       int a = 10;
-       int b = 20;
-
-       Swap(a,b);
-       System.out.println("a is : "+ a+ " b is : " + b);
+       
 
     }
 } 
