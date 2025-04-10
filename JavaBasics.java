@@ -1,24 +1,36 @@
-import java.util.*;
 public class JavaBasics{
-    public static void calculateSum(){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter A :");
-        int a = sc.nextInt();
-        System.out.print("Enter B :");
-        int b = sc.nextInt();
+    public static int calculateSum(int sum1,int sum2){
+        
  
-        int sum = a+b;
-        System.out.println("The Sum is : "+ sum);
+        int sum = sum1+sum2;
+       return sum;
         
 
     }
-    public static void PrintHelloWorld(){
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
+    public static void Swap(int a, int b){
+
+        
+        int temp = a;
+        a = b;
+        b = temp;
+        
+
     }
     public static void main(String[] args) {
-        //PrintHelloWorld();//function call
-        calculateSum();
+        //Scanner sc = new Scanner(System.in);
+       // System.out.print("Enter A :");
+       // int a = sc.nextInt();
+       // System.out.print("Enter B :");
+        //int b = sc.nextInt();
+
+       // int sum = calculateSum(a,b);
+       // System.out.println("The Sum is : "+ sum);
+       int a = 10;
+       int b = 20;
+
+       Swap(a,b);
+       System.out.println("a is : "+ a+ " b is : " + b);
+
     }
-}
+} 
+ 
