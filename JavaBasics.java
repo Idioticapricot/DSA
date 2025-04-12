@@ -1,18 +1,20 @@
-
-
+import java.util.*;
 public class JavaBasics{
-   public static int factorial (int n){
-    int f = 1;
-    for(int i = 1;i<=n;i++){
-        f=f*i;
-
+    public static void update (int marks[]){
+        for (int i=0;i<marks.length;i++){
+            marks[i]=marks[i]+1;
+        }
+       
+        
     }
-    return f;
-   }
     public static void main(String[] args) {
-      
-       System.out.println(factorial(15));
+        int marks[] = {97,98,99};
+        update(marks);
 
+        for(int i=0;i<marks.length;i++){
+            System.out.println("marks are "+ marks[i]);
+        }
     }
+   
 } 
  
