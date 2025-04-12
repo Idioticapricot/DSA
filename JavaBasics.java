@@ -1,20 +1,23 @@
 import java.util.*;
 public class JavaBasics{
-    public static void update (int marks[]){
-        for (int i=0;i<marks.length;i++){
-            marks[i]=marks[i]+1;
+    public static void find(int key,int arr[])
+    {
+        for (int i=0;i<arr.length;i++){
+            if(arr[i]==key){
+                System.out.println("found at : "+arr[i]);
+                break;
+                }
+                
         }
-       
-        
     }
     public static void main(String[] args) {
-        int marks[] = {97,98,99};
-        update(marks);
+        int arr[]={1,2,3,4,6,5,7,8,9};
+        int key = 1;
+        find(key,arr);
 
-        for(int i=0;i<marks.length;i++){
-            System.out.println("marks are "+ marks[i]);
-        }
     }
-   
+    
+
+
 } 
  
