@@ -1,19 +1,24 @@
 import java.util.*;
 public class JavaBasics{
-    public static void find(int key,int arr[])
+    public static void largest(int arr[])
     {
-        for (int i=0;i<arr.length;i++){
-            if(arr[i]==key){
-                System.out.println("found at : "+arr[i]);
-                break;
-                }
-                
+        int largest = arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(largest<arr[i]){
+                largest = arr[i];
+            }
+
+        
+        
+           
         }
+        System.out.println("Largest is " +largest);
+        return;
+        
     }
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,6,5,7,8,9};
-        int key = 1;
-        find(key,arr);
+       int arr[]={10,2,6,3,5};
+       largest(arr);
 
     }
     
