@@ -1,25 +1,28 @@
 import java.util.*;
 public class JavaBasics{
-    public static void largest(int arr[])
+    public static void Bsearch(int arr[],int key)
     {
-        int largest = arr[0];
-        for(int i=1;i<arr.length;i++){
-            if(largest<arr[i]){
-                largest = arr[i];
-            }
-
+        int start = 0;
+        int end = arr.length-1;
+     
+     while(start<=end){
         
-        
-           
+        int mid = start + (end - start) / 2;;
+        if(arr[mid] == key){
+            System.out.print("found at :" +mid);
         }
-        System.out.println("Largest is " +largest);
+        else if(arr[mid] > key){
+            end = mid -2;
+        }
+        else{start=mid+1;}
         return;
-        
+     }
     }
-    public static void main(String[] args) {
-       int arr[]={10,2,6,3,5};
-       largest(arr);
-
+    public static void main(String[] args) 
+    {
+        int arr[] ={2,4,6,8,10,12,14};
+        int key = 8;
+        Bsearch(arr, key);
     }
     
 
